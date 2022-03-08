@@ -36,18 +36,10 @@ class ViewController: UIViewController {
         greenSlider.minimumTrackTintColor = .green
     }
 
-    @IBAction func redSliderAction() {
+    @IBAction func rgbSliderAction() {
         setColor()
         redLabel.text = String(format: "%.2f", redSlider.value)
-    }
-    
-    @IBAction func greenSliderAction() {
-        setColor()
         greenLabel.text = String(format: "%.2f", greenSlider.value)
-    }
-    
-    @IBAction func blueSliderAction() {
-        setColor()
         blueLabel.text = String(format: "%.2f", blueSlider.value)
     }
     

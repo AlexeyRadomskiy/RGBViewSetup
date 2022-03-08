@@ -87,19 +87,19 @@
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Ej-cC-sIt">
                                                         <rect key="frame" x="-2" y="0.0" width="260" height="31"/>
                                                         <connections>
-                                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Kqd-QD-Acv"/>
+                                                            <action selector="rgbSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kN8-dh-FKm"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sZq-dR-U9y">
                                                         <rect key="frame" x="-2" y="50" width="260" height="31"/>
                                                         <connections>
-                                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="T7i-UR-aPk"/>
+                                                            <action selector="rgbSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="MLV-dj-Eli"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-2p-00n">
                                                         <rect key="frame" x="-2" y="100" width="260" height="31"/>
                                                         <connections>
-                                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Oci-OX-6d2"/>
+                                                            <action selector="rgbSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="xCr-cc-8lG"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>
