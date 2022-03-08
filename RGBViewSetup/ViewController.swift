@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         case redSlider:
             redLabel.text = string(from: redSlider)
         case greenSlider:
-            redLabel.text = string(from: greenSlider)
+            greenLabel.text = string(from: greenSlider)
         default:
             blueLabel.text = string(from: blueSlider)
         }
