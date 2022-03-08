@@ -24,12 +24,7 @@ class ViewController: UIViewController {
         
         // View
         RGBView.layer.cornerRadius = 20
-        RGBView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value),
-            green: CGFloat(greenSlider.value),
-            blue: CGFloat(blueSlider.value),
-            alpha: 1
-        )
+        setColor()
         
         // Labels
         redLabel.text = String(format: "%.2f", redSlider.value)
@@ -39,40 +34,30 @@ class ViewController: UIViewController {
         // Sliders
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
-        
     }
 
     @IBAction func redSliderAction() {
-        RGBView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value),
-            green: CGFloat(greenSlider.value),
-            blue: CGFloat(blueSlider.value),
-            alpha: 1
-        )
-        
+        setColor()
         redLabel.text = String(format: "%.2f", redSlider.value)
     }
     
     @IBAction func greenSliderAction() {
-        RGBView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value),
-            green: CGFloat(greenSlider.value),
-            blue: CGFloat(blueSlider.value),
-            alpha: 1
-        )
-        
+        setColor()
         greenLabel.text = String(format: "%.2f", greenSlider.value)
     }
     
     @IBAction func blueSliderAction() {
+        setColor()
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
+    }
+    
+    private func setColor() {
         RGBView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
-        
-        blueLabel.text = String(format: "%.2f", blueSlider.value)
     }
 }
 
