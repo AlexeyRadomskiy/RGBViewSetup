@@ -180,4 +180,3 @@ extension ColorViewController: UITextFieldDelegate {
         keyboardToolbar.items = [flexBarButton, doneButton]
     }
 }
-
